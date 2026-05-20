@@ -141,8 +141,6 @@ int main() {
 
 		DrawText(TextFormat("Selected Block: %d", blockPick), 0, 0, 20, BLACK);
 
-		//printf("%f \n", GetMouseWheelMove());
-
 		//setting up world spawn blocks
 		//stone:
 		for (long unsigned int a = 0; a < wstone.size(); a++) {
