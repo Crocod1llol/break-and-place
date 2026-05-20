@@ -1,8 +1,3 @@
-/* don't forget to add the ability to select block
- from numbers but also from a scrollwhell
- 
- thats it
-*/
 #include <string>
 #include <iostream>
 #include <vector>
