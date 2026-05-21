@@ -76,6 +76,11 @@ int main() {
 
 	SetTargetFPS(60);
 
+	//load sound
+	Sound place = LoadSound("resources/place.ogg");
+	Sound Bbreak = LoadSound("resources/break.ogg");
+
+	
 	//generating structures to create the map :0
 	//using a vector to keep track of the spawned blocks
 	std::vector<stone> wstone;
@@ -149,6 +154,7 @@ int main() {
 			if (CheckCollisionRecs(i.hitbox, mouseHitbox) && IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
 
 				wstone.erase(wstone.begin() + a);
+				PlaySound(Bbreak);
 			}
 		}
 
@@ -165,6 +171,7 @@ int main() {
 			if (CheckCollisionRecs(i.hitbox, mouseHitbox) && IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
 
 				wdirt.erase(wdirt.begin() + a);
+				PlaySound(Bbreak);
 			}
 		}
 
@@ -180,6 +187,7 @@ int main() {
 			if (CheckCollisionRecs(i.hitbox, mouseHitbox) && IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
 
 				wgrass.erase(wgrass.begin() + a);
+				PlaySound(Bbreak);
 			}
 		}
 
@@ -195,6 +203,8 @@ int main() {
 			if (CheckCollisionRecs(i.hitbox, mouseHitbox) && IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
 
 				wwood.erase(wwood.begin() + a);
+				PlaySound(Bbreak);
+
 			}
 		}
 
@@ -250,7 +260,8 @@ int main() {
 				
 				wwood.push_back(fwood);
 			}
-			
+					
+			PlaySound(place);
 		}
 
 
