@@ -3,7 +3,7 @@
 #include <vector>
 
 extern "C" {
-	#include "raylib.h"
+	#include "lib/raylib.h"
 }
 
 //define constants
