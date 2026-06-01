@@ -7,6 +7,6 @@ This is kind of a joke, so don't take anything seriously, it's just there becaus
 
 # Compiling
 
-Use the compile.sh file i made for you, make sure you have GCC installed or anything else to compile and link raylib and this program.
+Use the compile.sh file i made for you, make sure you have GCC and X11 dev kit installed to compile.
 
 Enjoy lol.
