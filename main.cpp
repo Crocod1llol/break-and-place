@@ -7,8 +7,8 @@ extern "C" {
 }
 
 //define constants
-const int Width = 1002;
-const int Height = 801;
+const int Width = 1000;
+const int Height = 800;
 
 //defying classes for different blocks
 class dirt {
