@@ -138,9 +138,7 @@ int main() {
 		//setup canvas (DO NOT DRAW ANYTHING BEFORE THIS)
 		BeginDrawing();
 		ClearBackground(SKYBLUE);
-
-		DrawText(TextFormat("Selected Block: %d", blockPick), 0, 0, 20, BLACK);
-
+		
 		//setting up world spawn blocks
 		//stone:
 		for (long unsigned int a = 0; a < wstone.size(); a++) {
