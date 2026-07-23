@@ -1,3 +1,7 @@
+# NOTICE
+This repo is going to be archived because no one will maintain it.
+You can do whatever you want with it, just so you know.
+
 # break-and-place
 First real mini project made in C++ with raylib.
 
